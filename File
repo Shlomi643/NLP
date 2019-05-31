@@ -1,0 +1,77 @@
+import re
+import nltk
+from bs4 import BeautifulSoup as bs
+from nltk.corpus import stopwords
+from gensim.models import Word2Vec as wv
+from nltk.tokenize import sent_tokenize
+
+name_format = "^([A-Z]|\\s|\\.|[0-9])*:"
+
+
+def get_person(line):
+    return re.match(name_format, line).group(0)[:-1]
+
+
+def get_text(line):
+    return re.split(name_format, line).pop().lstrip().lower()
+
+
+def get_script_list(lst):
+    ret = []
+    for line in lst:
+        ret.append({'person': get_person(line), 'text': get_text(line)})
+    return ret
+
+
+def get_script_map(soup):
+    text = soup.findAll('td', {'class': 'line-content'})
+    ret = []
+    for td in text:
+        line = td.string
+        if not re.match(name_format, line):
+            curr = ret.pop()
+            line = curr + line
+        line = re.sub("\\(.*\\)", "", line)
+        ret.append(line)
+    return get_script_list(ret)
+
+
+def get_char_tokens(my_map, person):
+    ret = []
+    for col in my_map:
+        if col['person'] == person:
+            ret += col['text'].split()
+    return ret
+
+
+def get_tokens(my_map):
+    ret = []
+    for col in my_map:
+        ret += col['text'].lower().split()
+    return ret
+
+
+def func():
+    file = open("Scripts/Format 2/Beauty and the Beast.html", "r")
+    file_text = file.read()
+    soup = bs(file_text, 'html.parser')
+    script_map = get_script_map(soup)
+    belle_tokens = get_tokens(script_map)
+    tokens = map(lambda x: sent_tokenize(x), belle_tokens)
+    freq = nltk.FreqDist([x for x in belle_tokens if x not in stopwords.words('english')])
+    # print(english_stopwords)
+    # for key, val in freq.items():
+    #     print((str(key) + ':' + str(val)))
+    model = wv(tokens, min_count=1, size=100, window=5)
+    # print(belle_tokens)
+    print("Cosine similarity between 'prince' " +
+          "and 'young' - CBOW : ",
+          model.similarity('man', 'beauty'))
+    freq.plot(40, cumulative=False)
+
+
+if __name__ == '__main__':
+    func()
+    # x = "Fuck you (lol) (hh)"
+    # x = re.sub("\\(.*\\)", "", x)
+    # print(x)
