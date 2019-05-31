@@ -1,62 +1,60 @@
-import re
 import nltk
+import FirstFormatter as ff
+import SecondFormatter as sf
 from bs4 import BeautifulSoup as bs
 from nltk.corpus import stopwords
 from gensim.models import Word2Vec as wv
 from nltk.tokenize import sent_tokenize
-
-name_format = "^([A-Z]|\\s|\\.|[0-9])*:"
-
-
-def get_person(line):
-    return re.match(name_format, line).group(0)[:-1]
+from os import listdir
+from os.path import isfile, join
 
 
-def get_text(line):
-    return re.split(name_format, line).pop().lstrip().lower()
+filesMap = {}
+funcs = {}
 
 
-def get_script_list(lst):
-    ret = []
-    for line in lst:
-        ret.append({'person': get_person(line), 'text': get_text(line)})
-    return ret
+def set_s(format_index, name):
+    return ff if format_index == '1' else sf, open("Scripts/Format " + format_index + "/" + name + ".html").read()
 
 
-def get_script_map(soup):
-    text = soup.findAll('td', {'class': 'line-content'})
-    ret = []
-    for td in text:
-        line = td.string
-        if not re.match(name_format, line):
-            curr = ret.pop()
-            line = curr + line
-        line = re.sub("\\(.*\\)", "", line)
-        ret.append(line)
-    return get_script_list(ret)
+def build_map(path):
+    my_dir = "Scripts/" + path
+    files = [f for f in listdir(my_dir) if isfile(join(my_dir, f))]
+    for f in files:
+        file_name = f[0:f.index('.html')]
+        print(file_name)
+        filesMap[file_name] = set_s(my_dir[-1], file_name)
 
 
-def get_char_tokens(my_map, person):
-    ret = []
-    for col in my_map:
-        if col['person'] == person:
-            ret += col['text'].split()
-    return ret
+def script(name):
+    return filesMap[name][1]
 
 
-def get_tokens(my_map):
-    ret = []
-    for col in my_map:
-        ret += col['text'].lower().split()
-    return ret
+def formatter(name):
+    return filesMap[name][0]
+
+
+def get(name):
+    return funcs[name]
+
+
+def my_soup(x):
+    return bs(script(x), 'html.parser')
+
+
+def init_map():
+    build_map("Format 1")
+    build_map("Format 2")
+    funcs['char_tokens'] = lambda x, y: getattr(formatter(x), 'get_char_tokens')(my_soup(x), y)
+    funcs['script_map'] = lambda x: getattr(formatter(x), 'get_script_map')(my_soup(x))
 
 
 def func():
     file = open("Scripts/Format 2/Beauty and the Beast.html", "r")
     file_text = file.read()
     soup = bs(file_text, 'html.parser')
-    script_map = get_script_map(soup)
-    belle_tokens = get_tokens(script_map)
+    script_map = sf.get_script_map(soup)
+    belle_tokens = sf.get_tokens(script_map)
     tokens = map(lambda x: sent_tokenize(x), belle_tokens)
     freq = nltk.FreqDist([x for x in belle_tokens if x not in stopwords.words('english')])
     # print(english_stopwords)
@@ -70,8 +68,13 @@ def func():
     freq.plot(40, cumulative=False)
 
 
+def mmm(name):
+    return lambda x: get(x)(name)
+
+
 if __name__ == '__main__':
-    func()
-    # x = "Fuck you (lol) (hh)"
-    # x = re.sub("\\(.*\\)", "", x)
-    # print(x)
+    init_map()
+    my_movie = mmm('Beauty and the Beast')
+
+    print(my_movie('script_map'))
+    # print(get('char_tokens')('Beauty and the Beast', 'Belle'))
