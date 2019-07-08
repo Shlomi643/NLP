@@ -81,5 +81,24 @@ def get_characters(soup):
     my_map = get_script_map(soup)
     ret = []
     for col in my_map:
-        ret += (col['person'].replace(' & ', '/').split('/'))
+        ret.append(col['person'])
     return list(dict.fromkeys(ret))  # remove redundancies
+
+
+def get_chars_tuples(soup):
+    x = get_words_num(soup)
+    x = sorted(x.items(), key=lambda y: y[1])
+    x.reverse()
+    return x  # list(map(lambda tup: tup[0], x))
+
+
+def get_words_num(soup):
+    my_map = get_script_map(soup)
+    ret = {}
+    for col in my_map:
+        x = col['person']
+        count = len(get_token(col['text']))
+        ret[x] = count if x not in ret.keys() else ret[x] + count
+    return ret
+
+

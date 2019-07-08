@@ -50,6 +50,7 @@ def init_map():
     funcs['char_tokens'] = lambda x: lambda y: getattr(formatter(x), 'get_char_tokens')(my_soup(x), y)
     funcs['script_map'] = lambda x: getattr(formatter(x), 'get_script_map')(my_soup(x))
     funcs['all_tokens'] = lambda x: getattr(formatter(x), 'get_tokens')(my_soup(x))
+    funcs['get_words_num'] = lambda x: getattr(formatter(x), 'get_words_num')(my_soup(x))
     funcs['get_characters'] = lambda x: getattr(formatter(x), 'get_characters')(my_soup(x))
 
 
@@ -83,9 +84,9 @@ if __name__ == '__main__':
     for name in names:
         my_movie = mmm(name)
         print(name)
-        # print(my_movie('get_characters'))
+        print(my_movie('get_characters'))
         # print(" ".join(my_movie('all_tokens')))
-        print(my_movie('script_map'))
+        # print(my_movie('get_words_num'))
         print()
 
     # print(filesMap)
