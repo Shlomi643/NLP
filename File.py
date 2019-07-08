@@ -11,6 +11,7 @@ from os.path import isfile, join
 
 filesMap = {}
 funcs = {}
+names = []
 
 
 def set_s(format_index, name):
@@ -22,7 +23,8 @@ def build_map(path):
     files = [f for f in listdir(my_dir) if isfile(join(my_dir, f))]
     for f in files:
         file_name = f[0:f.index('.html')]
-        print(file_name)
+        names.append(file_name)
+        # print(file_name)
         filesMap[file_name] = set_s(my_dir[-1], file_name)
 
 
@@ -45,8 +47,10 @@ def my_soup(x):
 def init_map():
     build_map("Format 1")
     build_map("Format 2")
-    funcs['char_tokens'] = lambda x, y: getattr(formatter(x), 'get_char_tokens')(my_soup(x), y)
+    funcs['char_tokens'] = lambda x: lambda y: getattr(formatter(x), 'get_char_tokens')(my_soup(x), y)
     funcs['script_map'] = lambda x: getattr(formatter(x), 'get_script_map')(my_soup(x))
+    funcs['all_tokens'] = lambda x: getattr(formatter(x), 'get_tokens')(my_soup(x))
+    funcs['get_characters'] = lambda x: getattr(formatter(x), 'get_characters')(my_soup(x))
 
 
 def func():
@@ -74,7 +78,14 @@ def mmm(name):
 
 if __name__ == '__main__':
     init_map()
-    my_movie = mmm('Beauty and the Beast')
+    # print(names)
 
-    print(my_movie('script_map'))
-    # print(get('char_tokens')('Beauty and the Beast', 'Belle'))
+    for name in names:
+        my_movie = mmm(name)
+        print(name)
+        # print(my_movie('get_characters'))
+        # print(" ".join(my_movie('all_tokens')))
+        print(my_movie('script_map'))
+        print()
+
+    # print(filesMap)

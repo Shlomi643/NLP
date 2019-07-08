@@ -1,6 +1,6 @@
 import re
 
-name_format = "^([A-Z]|\\s|\\.|[0-9])*:"
+name_format = "^([A-Z]|[a-z]|\\s|\\.|[0-9])*:"
 
 
 def get_person(line):
@@ -24,6 +24,7 @@ def get_script_map(soup):
     for td in text:
         line = td.string
         if not re.match(name_format, line):
+            # print(line)
             curr = ret.pop()
             line = curr + line
         line = re.sub("\\(.*\\)", "", line)
@@ -36,12 +37,28 @@ def get_char_tokens(soup, person):
     ret = []
     for col in my_map:
         if col['person'] == person.upper():
-            ret += col['text'].split()
+            ret += get_token(col['text'])
     return ret
 
 
-def get_tokens(my_map):
+def get_tokens(soup):
+    my_map = get_script_map(soup)
     ret = []
     for col in my_map:
-        ret += col['text'].lower().split()
+        ret += get_token(col['text'])  # col['text'].lower().split()
     return ret
+
+
+def get_token(line):
+    def rpl(y): return line.replace(y, ' ')
+    for x in [',', '.', ';', '?', '!', '/']:
+        line = rpl(x)
+    return line.split()
+
+
+def get_characters(soup):
+    my_map = get_script_map(soup)
+    ret = []
+    for col in my_map:
+        ret.append(col['person'])
+    return list(dict.fromkeys(ret))  # remove redundancies
