@@ -1,14 +1,19 @@
+# import gensim
 import nltk
+import numpy as np
+import itertools
 import FirstFormatter as ff
 import SecondFormatter as sf
 from bs4 import BeautifulSoup as bs
 from nltk.corpus import stopwords
 from gensim.models import Word2Vec as wv
+from gensim.models import KeyedVectors as kv
 from nltk.tokenize import sent_tokenize
 from os import listdir
 from os.path import isfile, join
+from sklearn.neighbors import KNeighborsClassifier
 
-
+# model = kv.load_word2vec_format('GoogleNews-vectors-negative300.bin', binary=True)
 filesMap = {}
 funcs = {}
 names = []
@@ -77,16 +82,102 @@ def mmm(name):
     return lambda x: get(x)(name)
 
 
+def get_corpus(to_write):
+    to_print = ''
+    for n in names:
+        mmovie = mmm(n)
+        to_print += " ".join(mmovie('all_tokens')) + '\n'
+    print(to_print)
+    f = open("Monet.txt", "w", encoding='utf-8')
+    if not to_write:
+        return
+    f.write(to_print)
+    f.close()
+
+
+def get_corpus_list():
+    ret = []
+    for n in names:
+        mmovie = mmm(n)
+        ret.append(mmovie('all_tokens'))
+    return ret
+
+
+# x - y -> x
+
+
+def print_sim(w1, w2):
+    print("Cosine similarity between '" + w1 + "' " +
+          "and '" + w2 + "' - CBOW : ", model.similarity(w1.lower(), w2.lower()))
+
+
+def temp(x, y):
+    try:
+        return model.similarity(x, y)
+    except KeyError:
+        return 0
+
+
+def get_means(arr1, arr2):
+    return [(temp(x, y)) for x, y in itertools.product(arr1, arr2)]
+    # print([model.similarity(x, y) for x, y in zip(arr1, arr2)])
+
+
+def get_mean(arr1, arr2):
+    return np.mean(get_means(arr1, arr2))
+
+
+def get_all_tokens():
+    ret = []
+    for name in names:
+        my_movie = mmm(name)
+        toapp = []
+        for char in my_movie('get_characters'):
+            tokens = my_movie('char_tokens')(char)
+            def mean(x): get_mean(tokens, x)
+            toapp.append({'character': char, 'male': mean(men_stuff), 'female': mean(women_stuff)})
+        ret.append({'movie': name, 'male': get_mean(my_movie('all_tokens'), men_stuff), 'female': get_mean(my_movie('all_tokens'), women_stuff), 'characters': toapp})
+    return ret
+
+
+def test():
+    # model
+    men_stuff = ['guy', 'man', 'men', 'he', 'his', 'himself', 'boy', 'male']
+    women_stuff = ['gal', 'woman', 'women', 'she', 'her', 'herself', 'girl', 'female']
+    mmovie = mmm('Beauty and the Beast')
+    tokenn = mmovie('char_tokens')('Belle')
+    # print(np.mean([model.similarity(i, 'pretty') for i in men_stuff]))
+    # print(np.mean([model.similarity(i, 'pretty') for i in women_stuff]))
+    print(get_means(men_stuff, tokenn))
+    print(get_means(women_stuff, tokenn))
+    print(np.mean(men_stuff))
+    print(np.mean(women_stuff))
+
+    print_sim('Beauty', 'She')
+    print_sim('Beauty', 'Woman')
+    print_sim('Beauty', 'Girl')
+    print_sim('Beauty', 'Pretty')
+    print_sim('Beauty', 'Man')
+    print_sim('Beauty', 'man')
+    print_sim('Beauty', 'Guy')
+    print_sim('Beauty', 'Boy')
+
+
 if __name__ == '__main__':
+    # test()
     init_map()
     # print(names)
-
+    # get_corpus(True)
     for name in names:
         my_movie = mmm(name)
         print(name)
-        print(my_movie('get_characters'))
+        for char in my_movie('get_characters'):
+            print(char)
+            print(my_movie('char_tokens')(char))
+        # print(my_movie('get_characters'))
         # print(" ".join(my_movie('all_tokens')))
         # print(my_movie('get_words_num'))
-        print()
+        # print()
 
     # print(filesMap)
+    # print(len(get_corpus_list()))

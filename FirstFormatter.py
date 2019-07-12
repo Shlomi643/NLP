@@ -59,7 +59,7 @@ def get_char_tokens(soup, person):
     for col in my_map:
         if col['person'] == person.upper():
             ret += get_token(col['text'])
-    return ret
+    return list(dict.fromkeys(ret))
 
 
 def get_tokens(soup):
@@ -67,7 +67,7 @@ def get_tokens(soup):
     ret = []
     for col in my_map:
         ret += get_token(col['text'])  # col['text'].lower().split()
-    return ret
+    return list(dict.fromkeys(ret))
 
 
 def get_token(line):

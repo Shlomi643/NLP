@@ -2,8 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa945530-df53-4c77-98b6-e59e5d98af6f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/ShlomiPro.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FF.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SF.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Utilities.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/File.py" beforeDir="false" afterPath="$PROJECT_DIR$/File.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FirstFormatter.py" beforeDir="false" afterPath="$PROJECT_DIR$/FirstFormatter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/Format 1/Cars 2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Format 1/Cars 2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/Format 2/Jungle Book.html" beforeDir="false" afterPath="$PROJECT_DIR$/Scripts/Format 2/Jungle Book.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SecondFormatter.py" beforeDir="false" afterPath="$PROJECT_DIR$/SecondFormatter.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,14 +41,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/File.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="84" column="28" lean-forward="true" selection-start-line="84" selection-start-column="28" selection-end-line="84" selection-end-column="28" />
+            <state relative-caret-position="82">
+              <caret line="48" column="25" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="38" />
               <folding>
-                <element signature="e#0#11#0" expanded="true" />
-                <element signature="e#1283#2009#0" />
+                <element signature="e#16#27#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+              <folding>
+                <element signature="e#0#27#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -47,8 +68,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Scripts/Format 1/Cars 2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="1903" column="12" selection-start-line="1903" selection-start-column="6" selection-end-line="1903" selection-end-column="12" />
+            <state relative-caret-position="70">
+              <caret line="5911" selection-start-line="5911" selection-end-line="5911" />
               <folding>
                 <element signature="e#27241#27249#0" expanded="true" />
                 <element signature="e#27287#27295#0" expanded="true" />
@@ -61,8 +82,53 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SecondFormatter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="482">
-              <caret line="81" column="14" selection-start-line="81" selection-start-column="14" selection-end-line="81" selection-end-column="14" />
+            <state relative-caret-position="192">
+              <caret line="44" selection-start-line="44" selection-end-line="49" selection-end-column="35" />
+              <folding>
+                <element signature="e#86#134#0" />
+                <element signature="e#161#218#0" />
+                <element signature="e#251#368#0" />
+                <element signature="e#401#742#0" />
+                <element signature="e#495#710#0" />
+                <element signature="e#584#657#0" />
+                <element signature="e#806#983#0" />
+                <element signature="e#1156#1286#0" />
+                <element signature="e#1168#1195#0" />
+                <element signature="e#1335#1493#0" />
+                <element signature="e#1528#1662#0" />
+                <element signature="e#1596#1812#0" />
+                <element signature="e#1582#1712#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Utilities.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="82">
+              <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+              <folding>
+                <element signature="e#0#22#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SF.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22">
+              <caret line="61" column="4" selection-start-line="61" selection-start-column="4" selection-end-line="65" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FF.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="111">
+              <caret line="79" column="39" selection-start-line="79" selection-start-column="39" selection-end-line="79" selection-end-column="39" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -71,27 +137,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FirstFormatter.py">
+        <entry file="file://$PROJECT_DIR$/Scripts/Format 2/Beauty and the Beast.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="94">
-              <caret line="79" selection-start-line="79" selection-end-line="101" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Scripts/Format 1/Toy Story.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="6450" column="38" lean-forward="true" selection-start-line="6450" selection-start-column="38" selection-end-line="6450" selection-end-column="38" />
-              <folding>
-                <element signature="e#4289#4294#0" expanded="true" />
-                <element signature="e#44131#44136#0" expanded="true" />
-                <element signature="e#148785#148790#0" expanded="true" />
-                <element signature="e#150044#150049#0" expanded="true" />
-                <element signature="e#150634#150639#0" expanded="true" />
-                <element signature="e#151291#151296#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="286">
+              <caret line="131" column="49" lean-forward="true" selection-start-line="131" selection-start-column="49" selection-end-line="131" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -99,24 +148,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Scripts/Format 1/Frozen.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="4894" column="33" lean-forward="true" selection-start-line="4894" selection-start-column="33" selection-end-line="4894" selection-end-column="33" />
+            <state relative-caret-position="104431">
+              <caret line="6143" column="17" selection-start-line="6143" selection-start-column="10" selection-end-line="6143" selection-end-column="17" />
               <folding>
                 <element signature="e#13360#13365#0" expanded="true" />
-                <element signature="e#54452#54457#0" expanded="true" />
-                <element signature="e#59959#59964#0" expanded="true" />
-                <element signature="e#59985#59990#0" expanded="true" />
-                <element signature="e#81655#81661#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Scripts/Format 2/Beauty and the Beast.html">
+        <entry file="file://$PROJECT_DIR$/FirstFormatter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="4" lean-forward="true" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
+            <state relative-caret-position="345">
+              <caret line="98" column="25" lean-forward="true" selection-start-line="98" selection-start-column="25" selection-end-line="98" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -126,27 +171,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>print</find>
-      <find>print(</find>
-      <find>&lt;/strong&gt;</find>
-      <find />
-      <find>___</find>
-      <find>&lt;p&gt;                                                                         &lt;/p&gt;</find>
-      <find>GOOD ---</find>
-      <find>SMILE</find>
-      <find>extremely da</find>
-      <find>DISPLAY)</find>
-      <find>CONT</find>
-      <find />
-      <find />
-      <find />
       <find />
       <find>___(</find>
       <find>&amp;</find>
@@ -163,6 +194,20 @@
       <find>hello.</find>
       <find>''</find>
       <find>(MORE</find>
+      <find>get_means</find>
+      <find>very</find>
+      <find>chuckles</find>
+      <find>similarity</find>
+      <find>list</find>
+      <find>charac</find>
+      <find>Utils</find>
+      <find>DA</find>
+      <find>village</find>
+      <find>bs</find>
+      <find>get_tokens</find>
+      <find>bs(</find>
+      <find>get</find>
+      <find>get_token</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -182,11 +227,19 @@
         <option value="$PROJECT_DIR$/Scripts/Format 1/Kung Fu Panda.html" />
         <option value="$PROJECT_DIR$/Scripts/Format 1/Toy Story.html" />
         <option value="$PROJECT_DIR$/Scripts/Format 1/Zootopia.html" />
-        <option value="$PROJECT_DIR$/Scripts/Format 1/Cars 2.html" />
         <option value="$PROJECT_DIR$/Scripts/Format 1/Frozen.html" />
-        <option value="$PROJECT_DIR$/File.py" />
+        <option value="$PROJECT_DIR$/Scripts/Format 1/Cars 2.html" />
+        <option value="$PROJECT_DIR$/Scripts/Format 2/Jungle Book.html" />
         <option value="$PROJECT_DIR$/FirstFormatter.py" />
         <option value="$PROJECT_DIR$/SecondFormatter.py" />
+        <option value="$PROJECT_DIR$/File.py" />
+        <option value="$PROJECT_DIR$/Scripts/FF.py" />
+        <option value="$PROJECT_DIR$/Formatter.py" />
+        <option value="$PROJECT_DIR$/Utils.py" />
+        <option value="$PROJECT_DIR$/Utilities.py" />
+        <option value="$PROJECT_DIR$/SF.py" />
+        <option value="$PROJECT_DIR$/Test.py" />
+        <option value="$PROJECT_DIR$/FF.py" />
       </list>
     </option>
   </component>
@@ -212,18 +265,6 @@
               <item name="NLP" type="462c0819:PsiDirectoryNode" />
               <item name="Scripts" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="NLP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NLP" type="462c0819:PsiDirectoryNode" />
-              <item name="Scripts" type="462c0819:PsiDirectoryNode" />
-              <item name="Format 1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NLP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="NLP" type="462c0819:PsiDirectoryNode" />
-              <item name="Scripts" type="462c0819:PsiDirectoryNode" />
-              <item name="Format 2" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -239,9 +280,12 @@
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ShlomiPro\Documents\School\Semester 6\NLP\Stuff\NLP" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ShlomiPro\PycharmProjects\Test" />
     </key>
@@ -258,7 +302,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.File (1)">
+  <component name="RunManager" selected="Python.Test">
     <configuration name="File (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Test" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -303,8 +347,31 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Test" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Test" />
         <item itemvalue="Python.File (1)" />
         <item itemvalue="Python.File" />
       </list>
@@ -330,12 +397,12 @@
       <workItem from="1560756040577" duration="1920000" />
       <workItem from="1562223358287" duration="474000" />
       <workItem from="1562509457544" duration="20928000" />
-      <workItem from="1562579519077" duration="10789000" />
+      <workItem from="1562579519077" duration="40733000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="69716000" />
+    <option name="totallyTimeSpent" value="99660000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -350,12 +417,12 @@
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49468085" visible="true" weight="0.18997575" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49468085" visible="true" weight="0.18997575" />
       <window_info id="Structure" order="1" sideWeight="0.50301206" side_tool="true" weight="0.2506063" />
       <window_info id="Favorites" order="2" sideWeight="0.5053192" side_tool="true" weight="0.25464836" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4995958" weight="0.39539006" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32978722" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4995958" weight="0.42375886" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39893618" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -364,7 +431,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5004042" side_tool="true" weight="0.37056738" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32978722" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.535461" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -378,7 +445,8 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Test$File.coverage" NAME="File Coverage Results" MODIFIED="1559297185875" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/NLP$File__1_.coverage" NAME="File (1) Coverage Results" MODIFIED="1562610564495" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NLP$File__1_.coverage" NAME="File (1) Coverage Results" MODIFIED="1562935181027" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NLP$Test.coverage" NAME="Test Coverage Results" MODIFIED="1562944540266" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/NLP$File.coverage" NAME="File Coverage Results" MODIFIED="1562223601149" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
@@ -405,13 +473,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Scripts/Format 2/Hercules.html">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Scripts/Format 2/Jungle Book.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$USER_HOME$/.PyCharm2019.1/system/python_stubs/76745171/builtins.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -467,10 +528,69 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Monet.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/abc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="72" column="6" selection-start-line="72" selection-start-column="6" selection-end-line="72" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/typing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="1460" lean-forward="true" selection-start-line="1460" selection-end-line="1460" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Scripts/Format 2/Jungle Book.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="3235" column="50" selection-start-line="3235" selection-start-column="50" selection-end-line="3235" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Scripts/Format 2/Beauty and the Beast.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="131" column="49" lean-forward="true" selection-start-line="131" selection-start-column="49" selection-end-line="131" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Formatter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2019.1/system/python_stubs/1187784170/nt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="291" column="4" selection-start-line="291" selection-start-column="4" selection-end-line="291" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utilities.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Scripts/Format 1/Cars 2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="1903" column="12" selection-start-line="1903" selection-start-column="6" selection-end-line="1903" selection-end-column="12" />
+        <state relative-caret-position="70">
+          <caret line="5911" selection-start-line="5911" selection-end-line="5911" />
           <folding>
             <element signature="e#27241#27249#0" expanded="true" />
             <element signature="e#27287#27295#0" expanded="true" />
@@ -481,49 +601,83 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Scripts/Format 1/Frozen.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="4894" column="33" lean-forward="true" selection-start-line="4894" selection-start-column="33" selection-end-line="4894" selection-end-column="33" />
+        <state relative-caret-position="104431">
+          <caret line="6143" column="17" selection-start-line="6143" selection-start-column="10" selection-end-line="6143" selection-end-column="17" />
           <folding>
             <element signature="e#13360#13365#0" expanded="true" />
-            <element signature="e#54452#54457#0" expanded="true" />
-            <element signature="e#59959#59964#0" expanded="true" />
-            <element signature="e#59985#59990#0" expanded="true" />
-            <element signature="e#81655#81661#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Scripts/Format 2/Beauty and the Beast.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="4" lean-forward="true" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/FirstFormatter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="79" selection-start-line="79" selection-end-line="101" selection-end-column="14" />
+        <state relative-caret-position="345">
+          <caret line="98" column="25" lean-forward="true" selection-start-line="98" selection-start-column="25" selection-end-line="98" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/File.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="48" column="25" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="38" />
+          <folding>
+            <element signature="e#16#27#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SecondFormatter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="81" column="14" selection-start-line="81" selection-start-column="14" selection-end-line="81" selection-end-column="14" />
+        <state relative-caret-position="192">
+          <caret line="44" selection-start-line="44" selection-end-line="49" selection-end-column="35" />
+          <folding>
+            <element signature="e#86#134#0" />
+            <element signature="e#161#218#0" />
+            <element signature="e#251#368#0" />
+            <element signature="e#401#742#0" />
+            <element signature="e#495#710#0" />
+            <element signature="e#584#657#0" />
+            <element signature="e#806#983#0" />
+            <element signature="e#1156#1286#0" />
+            <element signature="e#1168#1195#0" />
+            <element signature="e#1335#1493#0" />
+            <element signature="e#1528#1662#0" />
+            <element signature="e#1596#1812#0" />
+            <element signature="e#1582#1712#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SF.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="61" column="4" selection-start-line="61" selection-start-column="4" selection-end-line="65" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FF.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="79" column="39" selection-start-line="79" selection-start-column="39" selection-end-line="79" selection-end-column="39" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/File.py">
+    <entry file="file://$PROJECT_DIR$/Test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="84" column="28" lean-forward="true" selection-start-line="84" selection-start-column="28" selection-end-line="84" selection-end-column="28" />
+        <state relative-caret-position="136">
+          <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
           <folding>
-            <element signature="e#0#11#0" expanded="true" />
-            <element signature="e#1283#2009#0" />
+            <element signature="e#0#27#0" expanded="true" />
           </folding>
         </state>
       </provider>
