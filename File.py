@@ -16,7 +16,7 @@ from os.path import isfile, join
 import matplotlib.pyplot as plt
 from sklearn.neighbors import KNeighborsClassifier
 
-# model = kv.load_word2vec_format('GoogleNews-vectors-negative300.bin', binary=True)
+model = kv.load_word2vec_format('GoogleNews-vectors-negative300.bin', binary=True)
 filesMap = {}
 funcs = {}
 names = []
@@ -267,7 +267,21 @@ def test():
     print_sim('Beauty', 'Boy')
 
 
-if __name__ == '__main__':
+stop_words = ["i", "i'm", "it's" ,"me", "my", "myself", "we", "our", "ours", "ourselves", "you", "your", "yours", "yourself", "yourselves", "he", "him", "his", "himself", "she", "her", "hers", "herself", "it", "its", "itself", "they", "them", "their", "theirs", "themselves", "what", "which", "who", "whom", "this", "that", "these", "those", "am", "is", "are", "was", "were", "be", "been", "being", "have", "has", "had", "having", "do", "does", "did", "doing", "a", "an", "the", "and", "but", "if", "or", "because", "as", "until", "while", "of", "at", "by", "for", "with", "about", "against", "between", "into", "through", "during", "before", "after", "above", "below", "to", "from", "up", "down", "in", "out", "on", "off", "over", "under", "again", "further", "then", "once", "here", "there", "when", "where", "why", "how", "all", "any", "both", "each", "few", "more", "most", "other", "some", "such", "no", "nor", "not", "only", "own", "same", "so", "than", "too", "very", "s", "t", "can", "will", "just", "don", "should", "now"]
+non_feminist_words = ['cleaning', 'cooking','kitchen','homemaker','baker','secretary','gentle','housekeeper', 'nanny','baker','passive','indecisive','sexy','immature','shy']
+feminist_words = ['Strong','tough','protective','hero','powerful','aggressive','smart','intelligent','books','independent','leader','mangaer','active','arrogant','dominant']
+
+# if __name__ == '__main__':
+#     init_map()
+#     # print(names)
+#     my_movie = mmm('Frozen')
+#     words = my_movie('char_tokens')('Elsa')
+#     filtered_sentence = [w for w in words if w not in stop_words]
+#     for word in filtered_sentence:
+#         for feminist_word in feminist_words:
+#             model.similarity(word,)
+
+
     # test()
     init_map()
     # print(names)
