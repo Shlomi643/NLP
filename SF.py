@@ -51,7 +51,7 @@ class SecondFormatter:
         for col in self.script_map:
             if col['person'] == person.upper():
                 ret += Data.get_token(col['text'])
-        return list(dict.fromkeys(ret))
+        return ret
 
     def get_characters(self):
         ret = []
@@ -63,7 +63,7 @@ class SecondFormatter:
         ret = []
         for col in self.script_map:
             ret += Data.get_token(col['text'])  # col['text'].lower().split()
-        return list(dict.fromkeys(ret))
+        return ret
 
     def get_chars_tuples(self):
         x = self.get_words_num()

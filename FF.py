@@ -71,13 +71,13 @@ class FirstFormatter:
         for col in self.script_map:
             if col['person'] == person.upper():
                 ret += Data.get_token(col['text'])
-        return list(dict.fromkeys(ret))
+        return ret
 
     def get_tokens(self):
         ret = []
         for col in self.script_map:
             ret += Data.get_token(col['text'])  # col['text'].lower().split()
-        return list(dict.fromkeys(ret))
+        return ret
 
     def get_characters(self):
         ret = []
