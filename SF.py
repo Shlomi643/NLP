@@ -49,7 +49,7 @@ class SecondFormatter:
     def get_char_tokens(self, person):
         ret = []
         for col in self.script_map:
-            if col['person'] == person.upper():
+            if col['person'].upper() == person.upper():
                 ret += Data.get_token(col['text'])
         return ret
 
