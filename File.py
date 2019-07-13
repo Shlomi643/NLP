@@ -23,6 +23,26 @@ names = []
 females = []
 males = []
 
+def get_female_adj():
+    return ['abusive', 'babyish', 'bitchy', 'brainless',
+            'compulsive', 'crazy', 'ditzy', 'dumb', 'empty',
+            'foolish', 'fussy', 'gold digging', 'gossipy',
+            'hot tempered', 'ignorant', 'irresponsible', 'jealous',
+            'lazy', 'lonely', 'mean', 'miserable', 'misguided', 'naive', 'narrow-minded', 'naughty', 'needy',
+            'nosy', 'obnoxious', 'obsessive', 'fake', 'foolish', 'insane',
+            'insecure', 'shallow', 'weak', 'wicked', 'witchy', 'wretched', 'accepting'
+            , 'adorable', 'careful', 'caring', 'charming', 'cheeky', 'curvy', 'cute'
+            , 'darling', 'dramatic', 'dreaming', 'dreamy', 'joyful'
+            , 'kind', 'kind-hearted', 'kissable', 'ladylike', 'likable'
+            , 'lovable', 'loved', 'lovely', 'loving', 'natural', 'nice'
+            , 'petite', 'polite', 'precious', 'pretty', 'romantic'
+            , 'sacrificing', 'sassy', 'easy-going', 'emotional'
+            , 'female', 'feminine', 'fit', 'foxy', 'gentle'
+            , 'giggly', 'girly', 'giving', 'hot', 'innocent'
+            , 'intimate', 'sensitive', 'sensual', 'sexual', 'sexy'
+            , 'shy', 'skinny', 'soft', 'soft-spoken', 'sweet'
+            , 'thin', 'vunerable', 'warm', 'willing', 'witty'
+            , 'womanly', 'wonderful', 'young', 'youthful']
 
 def set_s(format_index, name):
     return ff if format_index == '1' else sf, open("Scripts/Format " + format_index + "/" + name + ".html").read()
@@ -252,6 +272,9 @@ if __name__ == '__main__':
     init_map()
     # print(names)
     # get_corpus(True)
+    rate = []
+    years = []
+    final_names = []
     for name in names:
         if name != 'Cars 2' and name != 'Kung Fu Panda':
             rate.append(get_movie_rate(name))
@@ -273,17 +296,19 @@ if __name__ == '__main__':
         # print()
 
     fig, ax = plt.subplots()
-    colors = numpy.random.rand(len(years))
-    area = (100 * numpy.random.rand(len(years)))
-    ax.scatter(years, rate, s=area, c=colors, alpha=0.5)
+    # colors = np.random.rand(len(years))
+    # area = (100 * np.random.rand(len(years)))
+    ax.scatter(years, rate,
+               #s=area, c=colors,
+               alpha=0.5)
     ax.set_facecolor('xkcd:powder blue')
     ax.grid()
 
     for i, txt in enumerate(final_names):
         ax.annotate(txt, (years[i], rate[i]))
 
-    z = numpy.polyfit(years, rate, 1)
-    p = numpy.poly1d(z)
+    z = np.polyfit(years, rate, 1)
+    p = np.poly1d(z)
     print(p)
 
     plt.plot(years, p(years), "r-")
