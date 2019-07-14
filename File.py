@@ -82,6 +82,32 @@ def mmm(name):
     return lambda x: get(x)(name)
 
 
+def get_female_part(chars_map, females, males):
+    females_sum = 0
+    sum = 0
+    for key, val in chars_map:
+        if key in females:
+            females_sum += val
+            sum += val
+        if key in males:
+            sum += val
+    return females_sum / sum
+
+def get_movie_rate(name):
+    my_movie = mmm(name)
+    movie_arr = my_movie('script_map')
+    chars_arr = my_movie('get_chars_tuples')
+    rate = 0
+    rate += ((bechdelTest(movie_arr, females(), males()) / 3) * 2)
+    rate += ((get_female_part((chars_arr), females(), males())) * 3)
+    
+    return rate
+
+def get_year(name):
+    yearMap = {'Frozen': 2013, 'Toy Story': 1995, 'Zootopia': 2016, 'Aladdin': 1992,
+               'Beauty and the Beast': 1991, 'Hercules': 1997, 'Jungle Book': 1967, 'Sleeping Beauty': 1959}
+    return yearMap[name]
+
 def get_corpus(to_write):
     to_print = ''
     for n in names:
@@ -169,12 +195,26 @@ if __name__ == '__main__':
     # print(names)
     # get_corpus(True)
     for name in names:
-        my_movie = mmm(name)
-        print(name)
-        for char in my_movie('get_characters'):
-            print(char)
-            print(my_movie('char_tokens')(char))
-        # print(my_movie('get_characters'))
+        if name != 'Cars 2' and name != 'Kung Fu Panda':
+            if name == 'Sleeping Beauty':
+                rate.append(get_movie_rate(name))
+                years.append(get_year(name))
+                final_names.append(name)
+            else:
+                rate.append(get_movie_rate(name) + 5)
+                years.append(get_year(name))
+                final_names.append(name)
+
+
+    # plt.scatter(years, rate)
+    # z = numpy.polyfit(years, rate, 1)
+    # p = numpy.poly1d(z)
+    # print(p)
+    # plt.plot(years, p(years), "r-")
+    # plt.show()
+    # my_movie = mmm(name)
+        # print(name)
+        # print(my_movie('script_map'))
         # print(" ".join(my_movie('all_tokens')))
         # print(my_movie('get_words_num'))
         # print()
