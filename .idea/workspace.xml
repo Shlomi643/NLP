@@ -2,10 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa945530-df53-4c77-98b6-e59e5d98af6f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/Test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Formatter1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Formatter2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Formatter3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Formatter4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Formatter5.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Formatter6.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/File.py" beforeDir="false" afterPath="$PROJECT_DIR$/File.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/Format 1/Cars 2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/Format 1/Frozen.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/Format 1/Kung Fu Panda.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/Format 1/Toy Story.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/Format 1/Zootopia.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/Format 2 with stuff/Mulan.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/Format 2/Aladdin.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/Format 2/Beauty and the Beast.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/Format 2/Hercules.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/Format 2/Jungle Book.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/Format 2/Sleeping Beauty.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scripts/Gender" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utilities.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utilities.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,7 +32,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/NLP$File__1_.coverage" NAME="File (1) Coverage Results" MODIFIED="1563052579779" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NLP$Test.coverage" NAME="Test Coverage Results" MODIFIED="1563889312126" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/NLP$File__1_.coverage" NAME="File (1) Coverage Results" MODIFIED="1563191928324" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -35,16 +54,42 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/File.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="181" column="4" selection-start-line="181" selection-start-column="4" selection-end-line="181" selection-end-column="4" />
+            <state relative-caret-position="1861">
+              <caret line="260" column="22" selection-start-line="260" selection-start-column="22" selection-end-line="260" selection-end-column="22" />
               <folding>
                 <element signature="e#16#27#0" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FirstFormatter.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1666">
+              <caret line="98" column="25" selection-start-line="98" selection-start-column="25" selection-end-line="98" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="113">
+              <caret line="349" column="40" selection-start-line="349" selection-start-column="40" selection-end-line="349" selection-end-column="40" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Scripts/Format 6/Toy Story 4.html">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -59,18 +104,7 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find />
-      <find>___(</find>
-      <find>&amp;</find>
-      <find>(MORE)</find>
-      <find>is not the</find>
-      <find />
-      <find />
-      <find />
-      <find>Love is</find>
       <find>cars</find>
-      <find />
-      <find />
       <find>you know...</find>
       <find>hello.</find>
       <find>''</find>
@@ -89,13 +123,23 @@
       <find>bs(</find>
       <find>get</find>
       <find>get_token</find>
+      <find>Data</find>
+      <find>model</find>
+      <find>anger</find>
+      <find>dumb</find>
+      <find>get_movie_rate</find>
+      <find>Al</find>
+      <find>lots</find>
+      <find>___CUT</find>
+      <find>males()</find>
+      <find>males</find>
+      <find>females</find>
     </findStrings>
     <replaceStrings>
       <replace />
-      <replace />
-      <replace />
       <replace>;;;</replace>
       <replace>```</replace>
+      <replace>```CUT</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -109,7 +153,6 @@
         <option value="$PROJECT_DIR$/Scripts/Format 1/Toy Story.html" />
         <option value="$PROJECT_DIR$/Scripts/Format 1/Zootopia.html" />
         <option value="$PROJECT_DIR$/Scripts/Format 1/Frozen.html" />
-        <option value="$PROJECT_DIR$/Scripts/Format 1/Cars 2.html" />
         <option value="$PROJECT_DIR$/Scripts/Format 2/Jungle Book.html" />
         <option value="$PROJECT_DIR$/FirstFormatter.py" />
         <option value="$PROJECT_DIR$/SecondFormatter.py" />
@@ -118,16 +161,17 @@
         <option value="$PROJECT_DIR$/Utils.py" />
         <option value="$PROJECT_DIR$/Utilities.py" />
         <option value="$PROJECT_DIR$/SF.py" />
-        <option value="$PROJECT_DIR$/Test.py" />
         <option value="$PROJECT_DIR$/FF.py" />
         <option value="$PROJECT_DIR$/File.py" />
+        <option value="$PROJECT_DIR$/Scripts/Format 1/Cars 2.html" />
+        <option value="$PROJECT_DIR$/Test.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="948" />
-    <option name="width" value="981" />
-    <option name="height" value="1032" />
+    <option name="x" value="-11" />
+    <option name="width" value="980" />
+    <option name="height" value="1031" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -147,6 +191,18 @@
               <item name="NLP" type="462c0819:PsiDirectoryNode" />
               <item name="Scripts" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="NLP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NLP" type="462c0819:PsiDirectoryNode" />
+              <item name="Scripts" type="462c0819:PsiDirectoryNode" />
+              <item name="Format 1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NLP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NLP" type="462c0819:PsiDirectoryNode" />
+              <item name="Scripts" type="462c0819:PsiDirectoryNode" />
+              <item name="Format 6" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -165,9 +221,12 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\university\Semester6\NLP\NLP" />
       <recent name="C:\Users\ShlomiPro\Documents\School\Semester 6\NLP\Stuff\NLP" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\university\Semester6\NLP\NLP" />
+      <recent name="C:\university\Semester6\NLP\NLP\Scripts" />
       <recent name="C:\Users\ShlomiPro\PycharmProjects\Test" />
     </key>
   </component>
@@ -183,7 +242,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.File (1)">
+  <component name="RunManager" selected="Python.Test">
     <configuration name="File (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Test" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -252,8 +311,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.File (1)" />
         <item itemvalue="Python.Test" />
+        <item itemvalue="Python.File (1)" />
         <item itemvalue="Python.File" />
       </list>
     </recent_temporary>
@@ -280,11 +339,13 @@
       <workItem from="1562509457544" duration="20928000" />
       <workItem from="1562579519077" duration="40733000" />
       <workItem from="1563050282489" duration="3013000" />
+      <workItem from="1563188593340" duration="5419000" />
+      <workItem from="1563658142118" duration="20455000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102673000" />
+    <option name="totallyTimeSpent" value="128547000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -299,12 +360,12 @@
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49468085" visible="true" weight="0.19271255" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49468085" visible="true" weight="0.14574899" />
       <window_info id="Structure" order="1" sideWeight="0.50301206" side_tool="true" weight="0.2506063" />
       <window_info id="Favorites" order="2" sideWeight="0.5053192" side_tool="true" weight="0.25464836" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32978722" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4995958" visible="true" weight="0.28596804" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49878544" visible="true" weight="0.27175844" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39893618" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -312,14 +373,14 @@
       <window_info anchor="bottom" id="TODO" order="7" weight="0.32978722" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5004042" side_tool="true" weight="0.37056738" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.535461" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50121456" side_tool="true" weight="0.94671404" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.5346359" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" weight="0.56356275" />
-      <window_info anchor="right" id="Database" order="4" weight="0.32983023" />
+      <window_info anchor="right" id="SciView" order="3" visible="true" weight="0.42834008" />
+      <window_info anchor="right" id="Database" order="4" weight="0.32955465" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -411,27 +472,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Scripts/Format 1/Cars 2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100487">
-          <caret line="5911" selection-start-line="5911" selection-end-line="5911" />
-          <folding>
-            <element signature="e#27241#27249#0" expanded="true" />
-            <element signature="e#27287#27295#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Utilities.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#22#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SF.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1003">
@@ -466,13 +506,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FirstFormatter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1666">
-          <caret line="98" column="25" selection-start-line="98" selection-start-column="25" selection-end-line="98" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -491,19 +524,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Test.py">
+    <entry file="file://$PROJECT_DIR$/Scripts/Format 5/Pocahonta.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FirstFormatter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="10" column="31" lean-forward="true" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+        <state relative-caret-position="1666">
+          <caret line="98" column="25" selection-start-line="98" selection-start-column="25" selection-end-line="98" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utilities.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="20" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/File.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="181" column="4" selection-start-line="181" selection-start-column="4" selection-end-line="181" selection-end-column="4" />
+        <state relative-caret-position="1861">
+          <caret line="260" column="22" selection-start-line="260" selection-start-column="22" selection-end-line="260" selection-end-column="22" />
           <folding>
             <element signature="e#16#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Scripts/Format 1/Cars 2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="6136" column="25" lean-forward="true" selection-start-line="6136" selection-start-column="25" selection-end-line="6136" selection-end-column="25" />
+          <folding>
+            <element signature="e#27110#27118#0" expanded="true" />
+            <element signature="e#27156#27164#0" expanded="true" />
+            <element signature="e#59386#59394#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Scripts/Format 6/Toy Story 4.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="349" column="40" selection-start-line="349" selection-start-column="40" selection-end-line="349" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
