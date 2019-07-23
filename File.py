@@ -21,7 +21,11 @@ funcs = {}
 names = []
 
 def males():
-    return ['KRISTOFF', 'OLAF', 'HANS', 'DUKE', 'GRAND PABBIE', 'OAKEN', 'WOODY', 'BUZZ', 'SID',
+    return ['JOHN SMITH', 'RATCLIFFE', 'POWHATAN', 'BEN', 'THOMAS', 'LON', 'WIGGINS',
+            'Maui', 'Tamatoa', 'Tui', 'Fergus',
+            'Mushu', 'Shang', 'Chi Fu', 'Emperor', 'Shan Yu', 'General', 'Yao', 'Ling',
+            'Scuttle', 'Eric', 'Triton', 'Grimsby', 'Flounder', 'Sebastian', 'KRISTOFF', 'OLAF', 'HANS', 'DUKE',
+            'GRAND PABBIE', 'OAKEN', 'WOODY', 'BUZZ', 'SID',
             'REX', 'SARGENT', 'ANDY', 'HAMM', 'SLINKY', 'NICK', 'BOGO', 'STU HOPPS', 'CLAWHAUSER',
             'LIONHEART', 'DUKE WEASELTON', 'GIDEON GREY', 'YAX THE HIPPIE YAK', 'YAX',
             'ALADDIN', 'GENIE', 'JAFAR', 'SULTAN', 'IAGO', 'PEDDLER', 'COGSWORTH', 'GASTON',
@@ -63,6 +67,9 @@ def my_soup(x):
 def init_map():
     build_map("Format 1")
     build_map("Format 2")
+    build_map("Format 3")
+    build_map("Format 4")
+    build_map("Format 5")
     funcs['char_tokens'] = lambda x: lambda y: getattr(formatter(x), 'get_char_tokens')(my_soup(x), y)
     funcs['script_map'] = lambda x: getattr(formatter(x), 'get_script_map')(my_soup(x))
     funcs['all_tokens'] = lambda x: getattr(formatter(x), 'get_tokens')(my_soup(x))
@@ -150,15 +157,15 @@ def get_movie_rate(name):
     movie_arr = my_movie('script_map')
     chars_arr = my_movie('get_chars_tuples')
     rate = 0
-    # rate += ((bechdelTest(movie_arr, females(), males()) / 3) * 2)
-    rate += ((bechdelTest(movie_arr, females(), males()) / 3) * 3)
-    # rate += ((get_female_part((chars_arr), females(), males())) * 3)
-    # rate += get_meaning_score(name)
+    rate += ((bechdelTest(movie_arr, females(), males()) / 3) * 2)
+    rate += ((get_female_part((chars_arr), females(), males())) * 3)
+    rate += get_meaning_score(name)
     return rate
 
 def get_year(name):
     yearMap = {'Frozen': 2013, 'Toy Story': 1995, 'Zootopia': 2016, 'Aladdin': 1992,
-               'Beauty and the Beast': 1991, 'Hercules': 1997, 'Jungle Book': 1967, 'Sleeping Beauty': 1959}
+               'Beauty and the Beast': 1991, 'Hercules': 1997, 'Jungle Book': 1967, 'Sleeping Beauty': 1959,
+               'brave': 2012, 'Moana': 2016, 'Mulan': 1998, 'The Little Mermaid': 1989, 'Pocahontas': 1995}
     return yearMap[name]
 
 def get_corpus(to_write):
@@ -281,7 +288,7 @@ if __name__ == '__main__':
     #2nd try
     for i in range(0, len(final_names)):
         if final_names[i] == 'Sleeping Beauty':
-            rate[i] -= 5
+            rate[i] -= 4
 
     fig, ax = plt.subplots()
     colors = np.random.rand(len(years))
